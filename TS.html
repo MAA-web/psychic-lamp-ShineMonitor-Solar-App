@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarApp</title>
+    <!--<script src="main.ts" lang="TS"></script>-->
+    
+    <script src="data/scripts/chart.js"></script>
+    
+</head>
+<body>
+
+    <!------------------------------------------------------------------------------------------------------->
+    <div>
+        <canvas id="my_chart"></canvas>
+    </div>
+    <!------------------------------------------------------------------------------------------------------->
+    <div class="calculated_data">
+        <p id="solar_output_day">gugug</p>
+        <p id="home_usage_day">gagaga</p>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+<style>
+    body {
+        background-color: black;
+    }
+    
+    .calculated_data {
+      flex-direction: row;
+      border: solid;
+      border-color: rgb(128, 50, 80);
+      size: 100px;
+    }
+    
+    #solar_output_day {
+      color: rgb(91, 106, 151);
+      padding-left: 10px;
+    }
+    #home_usage_day {
+      color: rgb(128, 50, 80);
+      padding-left: 10px;
+    }
+</style>
+</html>

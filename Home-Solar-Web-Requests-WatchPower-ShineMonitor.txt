@@ -1,0 +1,41 @@
+Login web request
+
+/public/?sign=3f77b01244151c608e931f5f567c0a14e95b76e6&salt=1692435420518&action=authSource&usr=nazir+abida&company-key=bnrl_frRFjEz8Mkn&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0 HTTP/1.1
+
+
+
+Data web request
+
+GET /public/?sign=a1a547bb8ab4d22c324a963f3554786f32050de8&salt=1692439145564&token=6cab740c02007b1324be1732e6a3a5661d9c4b62dc0c67db9086d713809159b4&action=queryDeviceDataOneDay&pn=W0820091184710&devcode=2400&sn=92932010100438&devaddr=1&date=2023-08-19&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0 HTTP/1.1
+Host: android.shinemonitor.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.3.1
+
+
+GET /public/?sign=b5e59349c0805ad35bd39bdc55cf40106d9f1c70&salt=1692473539741&token=e1491378db5d0f64195a21119e49fc21160e0ebe084d3b807481d411c78c76dc&action=queryDeviceDataOneDay&pn=W0820091184710&devcode=2400&sn=92932010100438&devaddr=1&date=2023-08-20&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0 HTTP/1.1
+Host: android.shinemonitor.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.3.1
+
+GET /public/?sign=5cf54fac723ad704ac3af9bbb1b7d2b3f793d3af&salt=1692643387991&token=f2a9903017cda9220a09609f65f27baa1daf7b4e7794066e97b2d1ab1f64575e&action=queryDeviceDataOneDay&pn=W0820091184710&devcode=2400&sn=92932010100438&devaddr=1&date=2023-08-21&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0 HTTP/1.1
+Host: android.shinemonitor.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.3.1
+
+GET /public/?sign=6ae466a780fc102d22f9e0ac9f066df3df646465&salt=1692645291870&token=e585309fd99674dfa62fb4ca60406f4923abfc70ee8e2eb5f6a86c3369fee4bd&action=queryDeviceDataOneDay&pn=W0820091184710&devcode=2400&sn=92932010100438&devaddr=1&date=2023-08-22&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0 HTTP/1.1
+Host: android.shinemonitor.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.3.1
+
+/* Finally figured it out. Took me 3 days !!!!! */ 
+https://api.shinemonitor.com/public/?sign=cdcaf33d79bcd16737767a481aae358d561924d7&salt=1692738603930&token=6cb48f07fa045267adfceadf1a7f8d57e650f611293f873205a8a20c5422a693&action=queryDeviceDataOneDay&pn=W0820091184710&devcode=2400&sn=92932010100438&devaddr=1&date=2023-08-23&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0
+
+GET /public/?sign=cdcaf33d79bcd16737767a481aae358d561924d7&salt=1692738603930&token=6cb48f07fa045267adfceadf1a7f8d57e650f611293f873205a8a20c5422a693&action=queryDeviceDataOneDay&pn=W0820091184710&devcode=2400&sn=92932010100438&devaddr=1&date=2023-08-23&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0 HTTP/1.1
+Host: android.shinemonitor.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.3.1
