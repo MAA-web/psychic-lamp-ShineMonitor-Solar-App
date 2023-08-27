@@ -104,8 +104,8 @@ public class login {
 
     private static String getFormatUrl(String str, String str2, String Token, String Secret) {
         
-        String Salt = System.currentTimeMillis() + "";
-        
+        //String Salt = System.currentTimeMillis() + "";
+        String Salt = "1692995669821";
         //String baseAction = getBaseAction(str2);
         String baseAction = Misc.printf2Str("&action=queryDeviceDataOneDay&pn=W0820091184710&devcode=2400&sn=92932010100438&devaddr=1&date=2023-08-24&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0");
         return Misc.printf2Str(str + "?sign=%s&salt=%s&token=%s%s", Misc.sha1StrLowerCase(( Salt + Secret + Token + baseAction).getBytes()), Salt, Token, baseAction);

@@ -7,42 +7,89 @@
     <!--<script src="main.ts" lang="TS"></script>-->
     
     <script src="data/scripts/chart.js"></script>
+    <script src="data/scripts/crypto-js.js"></script>
+    <script src="main.js"></script>
     
 </head>
 <body>
+    <div class="update">
+      <form aria-label="update_input_f" onsubmit="NewAPICall(); return false;">
+        <div id="update_inputs">
+          <input id="update_input" type="date" aria-label="update_input_i" autofocus placeholder="date">
 
+          <button id="update_input_b" type="submit">update</button>
+        </div>
+      </form>
+    </div>
+    
     <!------------------------------------------------------------------------------------------------------->
-    <div>
-        <canvas id="my_chart"></canvas>
+    <div class="my_charts">
+        <h3 id="my_chart_errors"></h3>
+        <canvas id="my_chart">Chart comes here</canvas>
     </div>
     <!------------------------------------------------------------------------------------------------------->
     <div class="calculated_data">
-        <p id="solar_output_day">gugug</p>
-        <p id="home_usage_day">gagaga</p>
+        <p id="solar_output_day"></p>
+        <p id="home_usage_day"></p>
     </div>
 
-    <script src="main.js"></script>
 
 </body>
 <style>
-    body {
-        background-color: black;
+    html {
+      margin: 0;
+      color-scheme: dark !important;
     }
     
+    body {
+      background-color: black;
+      color-scheme: dark !important;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+
+    .my_charts {
+      z-index: 5;
+    }
+
     .calculated_data {
       flex-direction: row;
       border: solid;
+      position: absolute;
+      top: 5vh;
+      right: 3vw;
+      z-index: 2;
       border-color: rgb(128, 50, 80);
       size: 100px;
     }
     
     #solar_output_day {
-      color: rgb(91, 106, 151);
+      color: rgb(87, 108, 168);
       padding-left: 10px;
     }
+    
     #home_usage_day {
-      color: rgb(128, 50, 80);
+      color: rgb(153, 69, 101);
       padding-left: 10px;
     }
+
+    #my_chart_errors {
+      color: aqua;
+      position: absolute;
+    }
+
+    #update_inputs {
+      position: absolute;
+      margin-left: 100px;
+      
+    }
+
+    .update {
+      position: relative;
+      margin: 0;
+      z-index: 20;
+    }
+
+    
 </style>
 </html>
