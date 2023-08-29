@@ -1,11 +1,37 @@
 //requires("data/scripts/chart.js");
 //requires("data/scripts/crypto-js.js");
- 
-document.addEventListener("DOMContentLoaded", function() {
+var Username;
+var Password;
+
+/*document.addEventListener("DOMContentLoaded", function() {
     // JavaScript code here
     const currentDate = new Date().toISOString().split('T')[0];
     document.getElementById('update_input').value = currentDate;
-});
+});*/
+
+function GetUsernameAndPassword() {
+  console.log("Getting Username and Password");
+  
+  Username = document.getElementById("Username").value;
+  Password = document.getElementById("Password").value;
+
+  console.log(Username + ', ' + Password);
+  
+  let LoginElements = document.getElementsByClassName("Login");
+  
+  for (let index = 0; index < LoginElements.length; index++) {
+    LoginElements[index].style.display = "none";
+  }
+
+  let updateElements = document.getElementsByClassName("update");
+  
+  for (let index = 0; index < updateElements.length; index++) {
+    updateElements[index].style.display = "block";
+  }
+
+  const currentDate = new Date().toISOString().split('T')[0];
+  document.getElementById('update_input').value = currentDate;
+}
 
 var MyChart;
 
@@ -14,8 +40,8 @@ async function getTandS() {
     let TSArray = [];
     let Token;
     let Secret;
-    let Username = "";
-    let Password = "";
+//    let Username = "";
+//    let Password = "";
     let Salt = Date.now();
     let baseAction = `&action=authSource&usr=${Username.replace(' ', '+')}&company-key=bnrl_frRFjEz8Mkn&i18n=en_US&lang=en_US&source=1&_app_client_=android&_app_id_=wifiapp.volfw.watchpower&_app_version_=1.2.0.0`;
     let HashedPassword = await sha1(Password);

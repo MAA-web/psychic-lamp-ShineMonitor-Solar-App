@@ -25,7 +25,6 @@ async function getLogindUrl(baseAction, Salt, HashedPassword) {
     return url;
 }
 
-
 async function NewAPICall() {
     let Salt = Date.now();//"1692449911453"; // Sample Salt
     let Password = "ali ali ali"; // Sample Password
